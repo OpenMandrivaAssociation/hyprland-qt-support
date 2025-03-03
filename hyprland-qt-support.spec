@@ -19,7 +19,7 @@ BuildRequires:	pkgconfig(vulkan)
 BuildSystem:	cmake
 BuildOption:	-DCMAKE_BUILD_TYPE:STRING=RelWithDebInfo
 BuildOption:	-DCMAKE_INSTALL_PREFIX:PATH=%{_prefix}
-BuildOption:	-DINSTALL_QML_PREFIX=/%{_qtdir}/qml
+BuildOption:	-DINSTALL_QMLDIR=%{_qtdir}/qml
 
 %description
 A qt6 qml style provider for hypr* apps.
@@ -31,6 +31,4 @@ A qt6 qml style provider for hypr* apps.
 %license LICENSE
 %doc README.md
 %{_libdir}/libhyprland-quick-styl*.so
-%{_libdir}/libhyprland-quick-style.so
-%{_qtdir}/qml/org/hyprland/style/*
 %{_qtdir}/qml/org/hyprland/
