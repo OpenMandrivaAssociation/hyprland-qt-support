@@ -31,5 +31,6 @@ A qt6 qml style provider for hypr* apps.
 %license LICENSE
 %doc README.md
 %{_libdir}/libhyprland-quick-styl*.so
-%{_libdir}/qt6/qml/org/hyprland/style/*
+%{_libdir}/libhyprland-quick-style.so
+%{_qtdir}/qml/org/hyprland/style/*
 %{_qtdir}/qml/org/hyprland/
